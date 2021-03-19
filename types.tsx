@@ -1,3 +1,4 @@
+import { albums } from './data/data';
 export type RootStackParamList = {
   Root: undefined;
   NotFound: undefined;
@@ -15,3 +16,18 @@ export type TabOneParamList = {
 export type TabTwoParamList = {
   TabTwoScreen: undefined;
 };
+
+export type AlbumType = {
+
+  id:string;
+  imageUri: string,
+  title: string,
+  artistHeadline: string
+
+}
+export type AlbumCategoryType= {
+  id: string,
+  albums: [AlbumType],
+  title:string,
+  imageUri:string
+}
