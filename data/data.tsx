@@ -73,7 +73,7 @@ export const albumCategories = [
   {
     id: '1',
     title: 'Pop',
-    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616097101/pop_o6kkez.jpg',
+    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616187900/popcard_q5zx29.jpg',
     albums: [
       {
         id: '1',
@@ -87,12 +87,14 @@ export const albumCategories = [
         imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616095451/mix-pop_pwew0v.jpg',
         artistHeadline :'Nhiều ca sĩ Việt trẻ được yêu thích.'
       }
-    ]
+    ],
+    top: 0,
   },
+
   {
     id: '2',
     title: 'Latin',
-    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616097098/latino_b65ssl.jpg',
+    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616187902/latincard_m4zj5l.jpg',
     albums: [
       {
         id: '3',
@@ -106,12 +108,13 @@ export const albumCategories = [
         imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616112082/latin2021_igtyfl.jpg',
         artistHeadline :'Maluma, Luis Fonsi, Rauw Alejandro, ...'
       },
-    ]
+    ],
+    top: 0,
   },
   {
     id: '3',
     title: 'Dance',
-    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616097095/dance_qf8aqb.jpg',
+    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616188321/dancecard_zfawna.jpg',
     albums:[
       {
         id: '5',
@@ -125,12 +128,13 @@ export const albumCategories = [
         imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616096259/danceViet_vs2ieh.jpg',
         artistHeadline :'Nhiều ca sĩ.'
       },
-    ]
+    ],
+    top: 0,
   },
   {
     id: '4',
     title: 'Romance',
-    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616097092/romance_pqhsac.jpg',
+    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616188213/romancard_synsrh.jpg',
     albums: [
       {
         id: '7',
@@ -144,12 +148,13 @@ export const albumCategories = [
         imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616114219/unnamed_mf6dje.jpg',
         artistHeadline :'Multi singers'
       },
-    ]
+    ],
+    top: 0,
   },
   {
     id: '5',
     title: 'A&B',
-    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616097107/r-b_vrmbcp.png',
+    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616187904/r_bcard_kv2avq.jpg',
     albums: [
       {
         id: '9',
@@ -163,14 +168,15 @@ export const albumCategories = [
         imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616114391/music-vector-20_god6eo.jpg',
         artistHeadline :'Nhiều ca sĩ.'
       },
-    ]
+    ],
+    top: 0,
    
   },
 
   {
     id: '6',
     title: 'Movie Songs',
-    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616097654/movies_so%CC%81n_cxxybv.png',
+    imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616187903/moviecard_optmcx.jpg',
     albums:[
       {
         id: '11',
@@ -178,8 +184,8 @@ export const albumCategories = [
         imageUri: 'https://res.cloudinary.com/maivw/image/upload/v1616097693/nhacphimviet_xdvkc5.jpg',
         artistHeadline :'Nhiều ca sĩ.'
       },
-    ]
+    ],
+    top: 0,
   },
-  
   
 ]

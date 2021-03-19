@@ -25,9 +25,10 @@ export type AlbumType = {
   artistHeadline: string
 
 }
-export type AlbumCategoryType= {
+export type AlbumCategoryType = {
   id: string,
   albums: [AlbumType],
   title:string,
-  imageUri:string
+  imageUri:string,
+  top: number,
 }
