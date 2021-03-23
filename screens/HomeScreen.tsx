@@ -13,6 +13,8 @@ export default function TabOneScreen() {
         <FlatList data={albumCategories}
         renderItem={({item}) => <AlbumCategory title={item.title} albums = {item.albums}/>}
         keyExtractor={item => item.id}
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
         />
           
       </View>

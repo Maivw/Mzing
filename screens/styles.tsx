@@ -1,12 +1,6 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  artistHeadline: {
-    color: '#9c9898',
-    fontSize: 18,
-    textAlign: 'center',
-    paddingVertical: 20,
-  },
 
   browserall: {
     color: '#9c9898',
@@ -50,38 +44,7 @@ export const styles = StyleSheet.create({
   genre: {
     backgroundColor: '#111'
   },
-  songDetailContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  
-  },
-  songIndetail: {
-    width: '100%',
-    height: 400,
-    shadowOffset: { width: 2, height: 2 },
-    shadowRadius: 1,
-    shadowColor: '#fff',
-    shadowOpacity: 0.1,
 
-  },
-  songImage: {
-    width: '100%',
-    height: '100%',
-    resizeMode: 'cover',
-    borderRadius: 5,
-  },
-  songName: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#9c9898',
-    paddingLeft: 20,
-    paddingVertical: 10,
-  },
-  songProgressContainer:{
-
-  },
-  songButtonController: {},
   searchContainer: {
 
   },

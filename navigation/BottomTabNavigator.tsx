@@ -11,15 +11,24 @@ import YourLibray from '../screens/YourLibary';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 import { createStackNavigator } from '@react-navigation/stack';
 import SongDetailScreen from "../screens/SongDetailScreen";
+import AlbumDetail from "../screens/AlbumDetail";
 
 const Stack = createStackNavigator();
 function SearchNavigator() {
   return (
-    <Stack.Navigator  screenOptions={{headerShown: false}} initialRouteName={"SongDetail"}>
+    <Stack.Navigator  screenOptions={{headerShown: true}} initialRouteName={"SongDetail"}>
       <Stack.Screen name="Search" component={SearchScreen} />
-      {/* <Stack.Screen name="SongDetail" component={SongDetailScreen} /> */}
     </Stack.Navigator>
-  )
+  );
+}
+function HomeNavigator() {
+  return (
+    <Stack.Navigator  screenOptions={{headerShown: true}} initialRouteName={"Home"}>
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="AlbumDetail" component={AlbumDetail} />
+      <Stack.Screen name="SongDetail" component={SongDetailScreen} />
+    </Stack.Navigator>
+  );
 }
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -29,11 +38,10 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="Home"
-      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
+      >
       <BottomTab.Screen
         name="Home"
-        component={HomeScreen}
+        component={HomeNavigator}
         options={{
           tabBarIcon: ({ color }) => <Entypo name="home" size={24} color="white" />,
         }}

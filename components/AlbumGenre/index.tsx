@@ -10,7 +10,7 @@ import Animated, {
 
 
 const { width, height } = Dimensions.get("window");
-const MIN_HEIGHT = 160;
+const MIN_HEIGHT = 200;
 export const MAX_HEIGHT = height / 2;
 
 interface AlbumGenre {
@@ -31,17 +31,25 @@ export default function AlbumGenre({y,  index, genre :{title, id, imageUri, top}
 
   const container = useAnimatedStyle(() => ({
     height: interpolate(y.value, inputRange, [MIN_HEIGHT, MAX_HEIGHT], Extrapolate.CLAMP),
-  }))
+  }));
 
   const titleStyle = useAnimatedStyle(()=>({
      opacity: interpolate(y.value, inputRange, [0, 1], Extrapolate.CLAMP),
-  }))
+  }));
+  const pictureStyle = useAnimatedStyle(() => ({
+    height: MAX_HEIGHT,
+    top: interpolate(
+      y.value,
+      inputRange,
+      [-top, 0]
+    ),
+  }));
   return (
   <TouchableWithoutFeedback onPress={() => Alert.alert("Pressed!")}>
       <Animated.View style={[customStyles.container, container]}>
         <Animated.Image
           source={{uri:imageUri}}
-          style={[customStyles .picture]}
+          style={[customStyles .picture, pictureStyle]}
         />
         <View style={customStyles .titleContainer}>
           <View style={customStyles .mainTitle}>

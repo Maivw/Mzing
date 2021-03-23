@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Text, View, FlatList, StyleSheet} from 'react-native';
+import { Text, View, FlatList, StyleSheet, Pressable} from 'react-native';
 import { TextInput } from "react-native";
 import {styles} from "./styles";
 import AlbumGenre, { MAX_HEIGHT }  from "../components/AlbumGenre/index";
@@ -29,7 +29,7 @@ export default function SearchScreen() {
   contentContainerStyle={{height:(albumCategories.length + 1) * MAX_HEIGHT}}
   decelerationRate="fast">
      <Animated.View style={customStyles.container}>
-     <View style={styles.inputWrapper}>
+     <Pressable style={styles.inputWrapper}>
       <TextInput
           style={styles.input}
           placeholder="Search songs or artist"
@@ -38,7 +38,7 @@ export default function SearchScreen() {
           placeholderTextColor={'black'}
         />
       <AntDesign name="search1" size={24} style={styles.iconSearch} />
-     </View>
+     </Pressable>
      <LinearGradient
         colors={['rgba(0,0,0,0.5)', '#4f4e4e', 'rgba(0,0,0,0.5)']}
         style={styles.genre}
